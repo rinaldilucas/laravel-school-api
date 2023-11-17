@@ -2,8 +2,8 @@
     "openapi": "3.0.3",
     "info": {
         "version": "1.0.0",
-        "title": "Ness Backend Test - OpenAPI 3.0",
-        "description": "Documentation of Ness Backend project developed by Lucas Rinaldi.",
+        "title": "Laravel School API - OpenAPI 3.0",
+        "description": "Documentation for the Laravel School API project, developed by Lucas Rinaldi. Hope you guys enjoy and that will help you on your study journey.",
         "contact": {
             "name": "Lucas Rinaldi",
             "email": "lucasreinaldi@gmail.com"
