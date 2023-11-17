@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Schema;
 
 use App\Models\{SchoolAssociation, User};
 
-class InsertDataIntoSchoolAssociations extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
