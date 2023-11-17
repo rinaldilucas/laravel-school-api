@@ -41,17 +41,16 @@ class ClassroomController extends Controller
             'alunos' => 'students',
         ];
 
-        $data = array_combine(array_map(function ($key) use ($keyMappings) {
-            return $keyMappings[$key] ?? $key;
-        }, array_keys($data)), $data);
+        $data = array_combine(
+            array_map(fn ($key) => $keyMappings[$key] ?? $key, array_keys($data)),
+            $data
+        );
 
         $validator = Validator::make($data, [
             'code' => [
                 'required',
                 Rule::unique('classrooms', 'code')
-                    ->where(function ($query) {
-                        $query->whereNull('deleted_at');
-                    })
+                    ->where(fn ($query) => $query->whereNull('deleted_at'))
                     ->ignore($data['id'] ?? null),
             ],
             'responsible_id' => 'required|exists:users,id',
@@ -98,9 +97,10 @@ class ClassroomController extends Controller
             'alunos' => 'students',
         ];
 
-        $data = array_combine(array_map(function ($key) use ($keyMappings) {
-            return $keyMappings[$key] ?? $key;
-        }, array_keys($data)), $data);
+        $data = array_combine(
+            array_map(fn ($key) => $keyMappings[$key] ?? $key, array_keys($data)),
+            $data
+        );
 
         $validator = Validator::make($data, [
             'code' => 'unique:classrooms,code,' . $id,

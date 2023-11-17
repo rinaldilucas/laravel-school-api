@@ -16,9 +16,7 @@ class SchoolController extends Controller
     public function getOne()
     {
         $schoolAssociation = SchoolAssociation::where('user_id', Auth::id())->get();
-        $schools = $schoolAssociation->map(function ($association) {
-            return $association->school;
-        });
+        $schools = $schoolAssociation->map(fn ($association) => $association->school);
 
         if ($schools->isEmpty()) {
             return response()->json(['message' => 'No schools found for the user'], Response::HTTP_NOT_FOUND);
