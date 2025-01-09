@@ -15,7 +15,7 @@
   <h3 align="center">Laravel School REST API</h3>
 
   <p align="center">
-    Project built using PHP, Laravel, Composer and MySQL <br>to jump start your studies!
+    Project built using PHP, Laravel, Composer, and MySQL <br>to jump-start your studies!
     <br />
     <a href="https://github.com/rinaldilucas/laravel-school-api"><strong>Explore the docs »</strong></a>
     <br />
@@ -76,7 +76,7 @@ Here are some of the features:
 -   API documentation using Swagger
 -   Several test examples using PHPUnit
 -   Package management using composer
--   Factories using faker to help tests and seeding
+-   Factories using faker to help with tests and seeding
 -   Example of endpoint receiving http data with custom names
 -   Data removal using soft delete
 
@@ -192,7 +192,7 @@ You can seed the database as shown before or seed the database via `./database/d
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -233,7 +233,7 @@ Project Link: [https://github.com/rinaldilucas/laravel-school-api](https://githu
 ## Donations
 
 If you feel that this project has helped you in any way, whether it's attracting clients or teaching you about the technologies used, feel free to make a donation.
-It helps me a lot to continue developing open source codes.
+It helps me a lot to continue developing open-source codes.
 
 -   Metamask (USDT):
     ```sh
